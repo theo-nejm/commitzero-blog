@@ -31,5 +31,9 @@ jobs:
         USERNAME: ${{ secrets.USERNAME }}
         PORT: ${{ secrets.PORT }}
         KEY: ${{ secrets.SSHKEY }}
-        script: cd /apps/commitzero-blog && docker build . -t commitzero-blog && docker rm commitzero-blog && docker run -d -p 3000:3000 commitzero-blog
+        script: |
+          cd /apps/commitzero-blog 
+          docker build . -t commitzero-blog
+          docker rm commitzero-blog || true
+          docker run -d -p 3000:3000 commitzero-blog
 
