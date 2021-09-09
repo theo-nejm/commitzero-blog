@@ -35,5 +35,5 @@ jobs:
           cd /apps/commitzero-blog 
           docker build . -t commitzero-blog
           docker rm commitzero-blog || true
-          docker run -d -p 3000:3000 commitzero-blog
+          docker run --name commitzero-blog -d -p 3000:3000
 
