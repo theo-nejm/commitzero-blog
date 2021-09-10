@@ -5,14 +5,12 @@ import HighlightedPost from "../components/HighlightedPost";
 import PostCard from "../components/PostCard";
 import Posts from "../components/Posts";
 
-import { posts as postsMock } from '../mocks/posts';
+import { posts as postsMock } from "../mocks/posts";
 
 const Home: NextPage = () => {
   return (
     <Container>
-      <h1>
-        CommitZero
-      </h1>
+      <h1>CommitZero</h1>
 
       <HighlightedPost>
         <img
@@ -20,10 +18,8 @@ const Home: NextPage = () => {
           alt="image"
         />
         <div>
-          <p className='date'>9 de Setembro de 2021</p>
-          <h2>
-            Autenticando usuários usando NodeJS, maizena e JWT
-          </h2>
+          <p className="date">9 de Setembro de 2021</p>
+          <h2>Autenticando usuários usando NodeJS, maizena e JWT</h2>
           <p className="description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Pellentesque tempus venenatis massa, sit amet facilisis nibh
@@ -35,15 +31,15 @@ const Home: NextPage = () => {
       </HighlightedPost>
 
       <Posts>
-        {
-          postsMock.map(({title, description, id, date, image}, index) => (
-            <PostCard 
-              title={title} 
-              description={description} 
-              key={id} 
-              date={date} 
-              image={image} />
-            ))        }
+        {postsMock.map(({ title, description, id, date, image }, index) => (
+          <PostCard
+            title={title}
+            description={description}
+            key={id}
+            date={date}
+            image={image}
+          />
+        ))}
       </Posts>
     </Container>
   );
