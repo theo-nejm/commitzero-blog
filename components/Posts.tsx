@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import PostCard from './PostCard';
+import PostCard from "./PostCard";
 
 const PostsContainer = styled.div`
   display: grid;
@@ -8,12 +8,11 @@ const PostsContainer = styled.div`
   margin-top: ${({ theme }) => theme.spacing(6)}px;
   width: 100%;
 
-  
-  @media(max-width: 920px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.md}px) {
     grid-template-columns: 1fr 1fr;
   }
-  @media(max-width: 720px) {
-    grid-template-columns: 100%;
+  @media (max-width: ${({ theme }) => theme.breakpoints.sm}px) {
+    grid-template-columns: 1fr;
   }
 `;
 

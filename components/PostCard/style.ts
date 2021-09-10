@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export default styled.div`
   height: 30rem;
@@ -12,10 +12,10 @@ export default styled.div`
 
   .date {
     color: ${({ theme }) => theme.colors.text.secondary};
-    transition: .35s ease;
+    transition: 0.35s ease;
   }
 
-  @media(max-width: 720px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.md}px) {
     height: auto;
   }
-`
+`;

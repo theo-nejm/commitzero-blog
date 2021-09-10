@@ -7,8 +7,8 @@ const defaultTheme: DefaultTheme = {
     background: "#E5E6ED",
     text: {
       contrast: "#171c20",
-      secondary: "rgba(23,28,32,0.5)"
-    }
+      secondary: "rgba(23,28,32,0.5)",
+    },
   },
   fontWeight: {
     thin: 100,
@@ -18,7 +18,14 @@ const defaultTheme: DefaultTheme = {
   font: {
     title: "Poppins, sans-serif",
     text: "Open sans, sans-serif",
-  }
+  },
+  breakpoints: {
+    xs: 0,
+    sm: 600,
+    md: 960,
+    lg: 1280,
+    xl: 1920,
+  },
 };
 
 export default defaultTheme;
