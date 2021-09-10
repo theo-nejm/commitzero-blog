@@ -36,4 +36,3 @@ jobs:
           docker build . -t commitzero-blog
           docker rm commitzero-blog || true
           docker run -d --name commitzero-blog -p 3000:3000 commitzero-blog
-
