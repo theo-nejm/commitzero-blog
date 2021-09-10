@@ -5,6 +5,10 @@ const Container = styled.div`
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
+
+  h1 {
+    font-size: 40px;
+  }
 `;
 
 export default Container;

@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+
 import Container from "../components/Container";
 import HighlightedPost from "../components/HighlightedPost";
 import PostCard from "../components/PostCard";
@@ -9,11 +10,7 @@ import { posts as postsMock } from '../mocks/posts';
 const Home: NextPage = () => {
   return (
     <Container>
-      <h1
-        style={{
-          fontSize: 40,
-        }}
-      >
+      <h1>
         CommitZero
       </h1>
 
@@ -21,22 +18,10 @@ const Home: NextPage = () => {
         <img
           src="https://uxmisfit.com/wp-content/uploads/2021/01/tutorial_glass_featured.jpg"
           alt="image"
-          width="100%"
-          style={{ borderRadius: 8, maxHeight: 300 }}
         />
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-          }}
-        >
+        <div>
           <p className='date'>9 de Setembro de 2021</p>
-          <h2
-            style={{
-              fontSize: 32,
-            }}
-          >
+          <h2>
             Autenticando usuários usando NodeJS, maizena e JWT
           </h2>
           <p className="description">
