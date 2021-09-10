@@ -28,6 +28,10 @@ const HighlightedPost = styled.div`
     color: ${({ theme }) => theme.colors.text.secondary};
     transition: .35s ease;
   }
+
+  @media(max-width: 720px) {
+    grid-template-columns: 100%;
+  }
 `;
 
 export default HighlightedPost;
