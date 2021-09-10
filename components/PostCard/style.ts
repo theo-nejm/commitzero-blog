@@ -14,4 +14,8 @@ export default styled.div`
     color: ${({ theme }) => theme.colors.text.secondary};
     transition: .35s ease;
   }
+
+  @media(max-width: 720px) {
+    height: auto;
+  }
 `

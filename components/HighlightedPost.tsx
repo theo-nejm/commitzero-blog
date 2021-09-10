@@ -7,11 +7,30 @@ const HighlightedPost = styled.div`
 
   h2 {
     margin: 0;
+
+    font-size: 32px;
   }
   
+  img {
+    width: 100%;
+    max-height: 300px;
+
+    border-radius: 8px;
+  }
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .date {
     color: ${({ theme }) => theme.colors.text.secondary};
     transition: .35s ease;
+  }
+
+  @media(max-width: 720px) {
+    grid-template-columns: 100%;
   }
 `;
 
