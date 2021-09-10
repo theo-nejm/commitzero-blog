@@ -10,7 +10,7 @@ const HighlightedPost = styled.div`
 
     font-size: 32px;
   }
-  
+
   img {
     width: 100%;
     max-height: 300px;
@@ -26,11 +26,19 @@ const HighlightedPost = styled.div`
 
   .date {
     color: ${({ theme }) => theme.colors.text.secondary};
-    transition: .35s ease;
+    transition: 0.35s ease;
   }
 
-  @media(max-width: 720px) {
-    grid-template-columns: 100%;
+  .description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.md}px) {
+    grid-template-columns: 1fr;
   }
 `;
 
