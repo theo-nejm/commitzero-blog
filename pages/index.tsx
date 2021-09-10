@@ -1,7 +1,10 @@
 import type { NextPage } from "next";
 import Container from "../components/Container";
 import HighlightedPost from "../components/HighlightedPost";
+import PostCard from "../components/PostCard";
 import Posts from "../components/Posts";
+
+import { posts as postsMock } from '../mocks/posts';
 
 const Home: NextPage = () => {
   return (
@@ -11,7 +14,7 @@ const Home: NextPage = () => {
           fontSize: 40,
         }}
       >
-        The Blog
+        CommitZero
       </h1>
 
       <HighlightedPost>
@@ -28,7 +31,7 @@ const Home: NextPage = () => {
             justifyContent: "center",
           }}
         >
-          <p>9 de Setembro de 2021</p>
+          <p className='date'>9 de Setembro de 2021</p>
           <h2
             style={{
               fontSize: 32,
@@ -36,7 +39,7 @@ const Home: NextPage = () => {
           >
             Autenticando usuários usando NodeJS, maizena e JWT
           </h2>
-          <p>
+          <p className="description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Pellentesque tempus venenatis massa, sit amet facilisis nibh
             consectetur a. Ut quis nisi eget urna porta luctus. Nunc egestas
@@ -47,12 +50,15 @@ const Home: NextPage = () => {
       </HighlightedPost>
 
       <Posts>
-        {/* <Post
-          img="https://uxmisfit.com/wp-content/uploads/2021/01/tutorial_glass_featured.jpg"
-          date={new Date()}
-          title="Theo é avistado fazendo bola gato"
-          description=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempus venenatis massa, sit amet facilisis nibh consectetur a. Ut quis nisi eget urna porta luctus. Nunc egestas"
-        /> */}
+        {
+          postsMock.map(({title, description, id, date, image}, index) => (
+            <PostCard 
+              title={title} 
+              description={description} 
+              key={id} 
+              date={date} 
+              image={image} />
+            ))        }
       </Posts>
     </Container>
   );
