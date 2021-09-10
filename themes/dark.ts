@@ -1,13 +1,13 @@
 import { DefaultTheme } from "styled-components";
 
-const defaultTheme: DefaultTheme = {
-  name: "light",
+const darkTheme: DefaultTheme = {
+  name: "dark",
   spacing: (num) => num * 8,
   colors: {
-    background: "#E5E6ED",
+    background: "#171C20",
     text: {
-      contrast: "#171c20",
-      secondary: "rgba(23,28,32,0.5)"
+      contrast: "#fafafa",
+      secondary: "rgba(250,250,250,0.5)"
     }
   },
   fontWeight: {
@@ -21,4 +21,4 @@ const defaultTheme: DefaultTheme = {
   }
 };
 
-export default defaultTheme;
+export default darkTheme;
