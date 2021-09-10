@@ -13,14 +13,6 @@ const HighlightedPost = styled.div`
     color: ${({ theme }) => theme.colors.text.secondary};
     transition: .35s ease;
   }
-
-  .description {
-    white-space: nowrap;                  
-    overflow: hidden;
-    text-overflow:    ellipsis;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-  }
 `;
 
 export default HighlightedPost;
