@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint:check": "tsc --project ./tsconfig.json --noEmit && eslint . -c .eslintrc --ext .ts,.tsx"
   },
   "dependencies": {
     "next": "11.1.2",
