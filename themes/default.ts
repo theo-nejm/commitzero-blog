@@ -3,6 +3,15 @@ import { DefaultTheme } from "styled-components";
 const defaultTheme: DefaultTheme = {
   name: "light",
   spacing: (num) => num * 8,
+  alpha: (color: string, opacity: number) => {
+    return (
+      color +
+      Math.round(Math.min(Math.max(opacity || 1, 0), 1) * 255)
+        .toString(16)
+        .toUpperCase()
+    );
+  },
+
   colors: {
     background: "#E5E6ED",
     text: {

@@ -3,7 +3,10 @@ import "styled-components";
 declare module "styled-components" {
   export interface DefaultTheme {
     name: string;
+
     spacing(num: number): number;
+    alpha(color: string, opacity: number): string;
+
     colors: {
       background: string;
       text: {

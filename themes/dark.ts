@@ -2,7 +2,17 @@ import { DefaultTheme } from "styled-components";
 
 const darkTheme: DefaultTheme = {
   name: "dark",
+
   spacing: (num) => num * 8,
+  alpha: (color: string, opacity: number) => {
+    return (
+      color +
+      Math.round(Math.min(Math.max(opacity || 1, 0), 1) * 255)
+        .toString(16)
+        .toUpperCase()
+    );
+  },
+
   colors: {
     background: "#171C20",
     text: {

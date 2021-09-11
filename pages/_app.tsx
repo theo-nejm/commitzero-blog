@@ -4,15 +4,16 @@ import { useState } from "react";
 import defaultTheme from "../themes/default";
 import darkTheme from "../themes/dark";
 import GlobalStyle from "../themes/global";
+import NavBar from "../components/NavBar";
 
 function MyApp({ Component, pageProps }: AppProps) {
-  const [theme, setTheme] = useState(defaultTheme)
-  
+  const [theme, setTheme] = useState(defaultTheme);
+
   function toggleTheme() {
-    if(theme.name === "light") {
-      setTheme(darkTheme)
-    } else if(theme.name === "dark") {
-      setTheme(defaultTheme)
+    if (theme.name === "light") {
+      setTheme(darkTheme);
+    } else if (theme.name === "dark") {
+      setTheme(defaultTheme);
     }
   }
 
@@ -20,7 +21,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <ThemeProvider theme={theme}>
       <GlobalStyle />
 
-    <button onClick={toggleTheme}>tema</button>
+      <NavBar toggleTheme={toggleTheme} />
 
       <Component {...pageProps} />
     </ThemeProvider>
