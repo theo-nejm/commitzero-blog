@@ -25,9 +25,15 @@ const darkTheme: DefaultTheme = {
     medium: 400,
     bold: 700,
   },
+  fontSize: {
+    small: '16px',
+    subtitle: '24px',
+    title: '40px',
+    text: '20px',
+  },
   font: {
     title: "Poppins, sans-serif",
-    text: "Open sans, sans-serif",
+    text: "Poppins, sans-serif",
   },
   breakpoints: {
     xs: 0,

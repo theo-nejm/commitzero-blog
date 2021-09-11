@@ -12,7 +12,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     background-color: ${({ theme }) => theme.colors.background};
-    font-family: 'Open Sans', sans-serif;
+    font-family: ${({ theme }) => theme.font.text};
     color: ${({theme}) => theme.colors.text.contrast};
     transition: .35s ease;
   }

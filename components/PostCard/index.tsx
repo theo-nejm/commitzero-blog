@@ -1,20 +1,26 @@
 import Container from './style';
+import Link from 'next/link';
 
 interface Props {
+  id: number;
   date: string;
   title: string;
   description: string;
   image: {
     url: string;
     altText: string;
-  }
+  },
+  content: string;
 }
 
-export default function Post({ date, title, description, image }: Props) {
+export default function Post({ id, date, title, description, image, content }: Props) {
   const parsedDate = new Date(date).toLocaleDateString();
 
   return <Container>
-    <img src={image.url} alt={image.altText} />
+    <Link href={`/post/${id}`}>
+    <a>
+      <img src={image.url} alt={image.altText} />
+    
     <div className="date">{parsedDate}</div>
     <div className="title">
       <h3>{title}</h3>
@@ -22,5 +28,7 @@ export default function Post({ date, title, description, image }: Props) {
     <div className="description">
       {description}
     </div>
+    </a>
+    </Link>
   </Container>;
 }

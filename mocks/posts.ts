@@ -7,7 +7,13 @@ export const posts = [
     image: {
       url: "https://i.pinimg.com/736x/56/d0/71/56d071fb485050a4840d85ffba235be4.jpg",
       altText: 'Imagem de uma árvore.'
-    }
+    },
+    content:
+      `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem molestiae id, quis corrupti ex officia? Dolorum aperiam omnis at a esse, dolor est, neque corporis exercitationem ducimus quos laudantium aliquam?
+      
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem molestiae id, quis corrupti ex officia? Dolorum aperiam omnis at a esse, dolor est, neque corporis exercitationem ducimus quos laudantium aliquam?
+      
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem molestiae id, quis corrupti ex officia? Dolorum aperiam omnis at a esse, dolor est, neque corporis exercitationem ducimus quos laudantium aliquam?`
   },
   {
     id: 2,
@@ -17,7 +23,13 @@ export const posts = [
     image: {
       url: "https://i.pinimg.com/736x/56/d0/71/56d071fb485050a4840d85ffba235be4.jpg",
       altText: 'Imagem de uma árvore.'
-    }
+    },
+    content:
+      `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem molestiae id, quis corrupti ex officia? Dolorum aperiam omnis at a esse, dolor est, neque corporis exercitationem ducimus quos laudantium aliquam?
+      
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem molestiae id, quis corrupti ex officia? Dolorum aperiam omnis at a esse, dolor est, neque corporis exercitationem ducimus quos laudantium aliquam?
+      
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem molestiae id, quis corrupti ex officia? Dolorum aperiam omnis at a esse, dolor est, neque corporis exercitationem ducimus quos laudantium aliquam?`
   },
   {
     id: 3,
@@ -27,7 +39,13 @@ export const posts = [
     image: {
       url: "https://i.pinimg.com/736x/56/d0/71/56d071fb485050a4840d85ffba235be4.jpg",
       altText: 'Imagem de uma árvore.'
-    }
+    },
+    content:
+      `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem molestiae id, quis corrupti ex officia? Dolorum aperiam omnis at a esse, dolor est, neque corporis exercitationem ducimus quos laudantium aliquam?
+      
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem molestiae id, quis corrupti ex officia? Dolorum aperiam omnis at a esse, dolor est, neque corporis exercitationem ducimus quos laudantium aliquam?
+      
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem molestiae id, quis corrupti ex officia? Dolorum aperiam omnis at a esse, dolor est, neque corporis exercitationem ducimus quos laudantium aliquam?`
   },
   {
     id: 4,
@@ -37,7 +55,13 @@ export const posts = [
     image: {
       url: "https://i.pinimg.com/736x/56/d0/71/56d071fb485050a4840d85ffba235be4.jpg",
       altText: 'Imagem de uma árvore.'
-    }
+    },
+    content:
+      `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem molestiae id, quis corrupti ex officia? Dolorum aperiam omnis at a esse, dolor est, neque corporis exercitationem ducimus quos laudantium aliquam?
+      
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem molestiae id, quis corrupti ex officia? Dolorum aperiam omnis at a esse, dolor est, neque corporis exercitationem ducimus quos laudantium aliquam?
+      
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem molestiae id, quis corrupti ex officia? Dolorum aperiam omnis at a esse, dolor est, neque corporis exercitationem ducimus quos laudantium aliquam?`
   },
   {
     id: 5,
@@ -47,7 +71,13 @@ export const posts = [
     image: {
       url: "https://i.pinimg.com/736x/56/d0/71/56d071fb485050a4840d85ffba235be4.jpg",
       altText: 'Imagem de uma árvore.'
-    }
+    },
+    content:
+      `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem molestiae id, quis corrupti ex officia? Dolorum aperiam omnis at a esse, dolor est, neque corporis exercitationem ducimus quos laudantium aliquam?
+      
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem molestiae id, quis corrupti ex officia? Dolorum aperiam omnis at a esse, dolor est, neque corporis exercitationem ducimus quos laudantium aliquam?
+      
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem molestiae id, quis corrupti ex officia? Dolorum aperiam omnis at a esse, dolor est, neque corporis exercitationem ducimus quos laudantium aliquam?`
   },
   {
     id: 6,
@@ -57,6 +87,12 @@ export const posts = [
     image: {
       url: "https://i.pinimg.com/736x/56/d0/71/56d071fb485050a4840d85ffba235be4.jpg",
       altText: 'Imagem de uma árvore.'
-    }
+    },
+    content:
+      `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem molestiae id, quis corrupti ex officia? Dolorum aperiam omnis at a esse, dolor est, neque corporis exercitationem ducimus quos laudantium aliquam?
+      
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem molestiae id, quis corrupti ex officia? Dolorum aperiam omnis at a esse, dolor est, neque corporis exercitationem ducimus quos laudantium aliquam?
+      
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem molestiae id, quis corrupti ex officia? Dolorum aperiam omnis at a esse, dolor est, neque corporis exercitationem ducimus quos laudantium aliquam?`
   }
 ]

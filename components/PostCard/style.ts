@@ -4,6 +4,11 @@ export default styled.div`
   height: 30rem;
   width: 100%;
 
+  a {
+    text-decoration: none;
+    color: ${({ theme }) => theme.colors.text.contrast}
+  }
+
   img {
     width: 100%;
     border-radius: ${({ theme }) => theme.spacing(1)}px;
