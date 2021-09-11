@@ -36,7 +36,7 @@ jobs:
         source: "."
         target: "/apps/commitzero-blog"
 
-    - name: Running build container
+    - name: Building application
       uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.HOST }}
@@ -46,6 +46,16 @@ jobs:
         script: |
           cd /apps/commitzero-blog 
           docker build . -t commitzero-blog
+
+    - name: Deploying application
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.HOST }}
+        USERNAME: ${{ secrets.USERNAME }}
+        PORT: ${{ secrets.PORT }}
+        KEY: ${{ secrets.SSHKEY }}
+        script: |
+          cd /apps/commitzero-blog 
           docker stop commitzero-blog || true
           docker rm commitzero-blog || true
           docker run -d --name commitzero-blog -p 3000:3000 commitzero-blog
