@@ -11,36 +11,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v1
-
-    - name: Copy repository contents via scp
-      uses: appleboy/scp-action@master
-      env:
-        HOST: ${{ secrets.HOST }}
-        USERNAME: ${{ secrets.USERNAME }}
-        PORT: ${{ secrets.PORT }}
-        KEY: ${{ secrets.SSHKEY }}
-      with:
-        source: "."
-        target: "/apps/commitzero-blog"
-
-    - name: Running lint and type checking
-      uses: appleboy/ssh-action@master
-      with:
-        host: ${{ secrets.HOST }}
-        USERNAME: ${{ secrets.USERNAME }}
-        PORT: ${{ secrets.PORT }}
-        KEY: ${{ secrets.SSHKEY }}
-        script: |
-          cd /apps/commitzero-blog 
-          yarn install
-          yarn lint:check
+    - name: Checkout
+      uses: actions/checkout@v2
+    - run: |
+        yarn install
+        yarn lint:check
 
   build:
     runs-on: ubuntu-latest
+    if: success()
 
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
 
     - name: Copy repository contents via scp
       uses: appleboy/scp-action@master
