@@ -3,19 +3,25 @@ import styled from "styled-components";
 export const NavContainer = styled.nav`
   display: flex;
   padding: ${({ theme }) => theme.spacing(2)}px;
+  align-items: center;
+  justify-content: space-between;
 
-  h1 {
-    margin: 0;
-    flex-grow: 1;
+  > a {
+    text-decoration: none;
+    
+    > h1 {
+      margin: 0;
+      color: ${({ theme }) => theme.colors.text.contrast};
+    }
   }
 `;
 
 export const ThemeButton = styled.button`
   border: none;
-  padding-inline-start: ${({ theme }) => theme.spacing(2)}px;
-  padding-inline-end: ${({ theme }) => theme.spacing(2)}px;
   border-radius: ${({ theme }) => theme.spacing(1)}px;
   color: ${({ theme }) => theme.colors.text.contrast};
+  height: 2.5rem;
+  width: 2.5rem;
 
   background-color: ${({ theme }) =>
     theme.alpha(theme.colors.text.contrast, 0.1)};

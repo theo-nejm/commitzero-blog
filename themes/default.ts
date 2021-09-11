@@ -28,6 +28,12 @@ const defaultTheme: DefaultTheme = {
     title: "Poppins, sans-serif",
     text: "Open sans, sans-serif",
   },
+  fontSize: {
+    small: '16px',
+    subtitle: '24px',
+    title: '40px',
+    text: '20px',
+  },
   breakpoints: {
     xs: 0,
     sm: 600,

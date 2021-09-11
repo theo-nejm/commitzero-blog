@@ -30,5 +30,11 @@ declare module "styled-components" {
       lg: number;
       xl: number;
     };
+    fontSize: {
+      text: string;
+      title: string;
+      subtitle: string;
+      small: string;
+    }
   }
 }

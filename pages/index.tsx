@@ -31,13 +31,15 @@ const Home: NextPage = () => {
       </HighlightedPost>
 
       <Posts>
-        {postsMock.map(({ title, description, id, date, image }, index) => (
+        {postsMock.map(({ title, description, id, date, image, content }) => (
           <PostCard
             title={title}
             description={description}
             key={id}
+            id={id}
             date={date}
             image={image}
+            content={content}
           />
         ))}
       </Posts>
