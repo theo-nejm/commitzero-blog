@@ -7,11 +7,23 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  lint-check:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v1
+    - name: Checkout and test
+      uses: actions/checkout@v2
+    - run: |
+        yarn install
+        yarn lint:check
+
+  build:
+    runs-on: ubuntu-latest
+    needs:
+      - lint-check
+
+    steps:
+    - uses: actions/checkout@v2
 
     - name: Copy repository contents via scp
       uses: appleboy/scp-action@master
@@ -24,7 +36,7 @@ jobs:
         source: "."
         target: "/apps/commitzero-blog"
 
-    - name: Building conatiner
+    - name: Building application
       uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.HOST }}
@@ -34,6 +46,16 @@ jobs:
         script: |
           cd /apps/commitzero-blog 
           docker build . -t commitzero-blog
+
+    - name: Deploying application
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.HOST }}
+        USERNAME: ${{ secrets.USERNAME }}
+        PORT: ${{ secrets.PORT }}
+        KEY: ${{ secrets.SSHKEY }}
+        script: |
+          cd /apps/commitzero-blog 
           docker stop commitzero-blog || true
           docker rm commitzero-blog || true
           docker run -d --name commitzero-blog -p 3000:3000 commitzero-blog
