@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-export const TopContainer = styled.div`
+interface IProps {
+  imgUrl: string;
+}
+
+export const TopContainer = styled.div<IProps>`
 display: grid;
 grid-template-columns: 1fr;
 justify-content: space-between;
@@ -40,7 +44,7 @@ p {
 `
 
 export const Content = styled.div`
-font-size: ${({ theme }) => theme.fontSize.text};
+font-size: ${({ theme }) => theme.fontSize.small};
 
 h3 {
   font-size: ${({ theme }) => theme.fontSize.subtitle}
@@ -48,6 +52,6 @@ h3 {
 }
 
 p {
-  
+  font-size: ${({ theme }) => theme.fontSize.small}
 }
 `
