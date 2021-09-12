@@ -18,7 +18,8 @@ const Home: NextPage = () => {
       <HighlightedPost>
         <Link href={`post/${highlighted.id}`}>
         <a>
-          <Image
+          {/*eslint-disable-next-line*/}
+          <img
             src={highlighted.image.url}
             alt={highlighted.image.altText}
           />
