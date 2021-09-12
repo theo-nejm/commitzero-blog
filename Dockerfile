@@ -5,7 +5,7 @@ ARG BASE_IMAGE=node:alpine
 # ================================================================
 FROM $BASE_IMAGE as builder
 
-ENV NODE_ENV homolog
+ENV NODE_ENV production
 
 WORKDIR /app
 
@@ -31,7 +31,7 @@ COPY --from=builder --chown=nextjs:nodejs /app/.next ./.next
 COPY --from=builder /app/node_modules ./node_modules
 COPY --from=builder /app/package.json ./package.json
 
-ENV NODE_ENV homolog
+ENV NODE_ENV production
 
 USER nextjs
 
