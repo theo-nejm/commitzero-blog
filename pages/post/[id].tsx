@@ -9,23 +9,16 @@ export default function Post() {
   const post = postsMock.find(post => post.id === Number(id));
   
   if(post) {
-    console.log(post)
     return (
-      <Container>
+      <Container id='post-container'>
         <TopContainer imgUrl={post.image.url}>
           <div className="img" />
           <h2>{post.title}</h2>
           <p>{post.description}</p>
+          <div className="divider" />
         </TopContainer>
-        <Content>
-          <p>{post.content}</p>
-        </Content>
+        <Content dangerouslySetInnerHTML={{ __html: post.content}} />
       </Container>
     )
   }
-  return (
-    <h2>
-      não tem post
-    </h2>
-  )
 }

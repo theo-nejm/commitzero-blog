@@ -27,8 +27,8 @@ const darkTheme: DefaultTheme = {
   },
   fontSize: {
     small: '16px',
-    subtitle: '24px',
-    title: '40px',
+    subtitle: '20px',
+    title: '32px',
     text: '20px',
   },
   font: {
@@ -38,6 +38,7 @@ const darkTheme: DefaultTheme = {
   breakpoints: {
     xs: 0,
     sm: 600,
+    post: 720,
     md: 960,
     lg: 1280,
     xl: 1920,

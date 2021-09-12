@@ -26,6 +26,7 @@ declare module "styled-components" {
     breakpoints: {
       xs: number;
       sm: number;
+      post: number;
       md: number;
       lg: number;
       xl: number;
