@@ -20,7 +20,7 @@ export default function Post({ id, date, title, description, image, content }: P
   return <Container>
     <Link href={`/post/${id}`}>
     <a>
-      <Image src={image.url} alt={image.altText} />
+      <img src={image.url} alt={image.altText} />
     
     <div className="date">{parsedDate}</div>
     <div className="title">
