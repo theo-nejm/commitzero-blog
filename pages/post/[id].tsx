@@ -1,7 +1,8 @@
 import { useRouter } from 'next/router';
 import Container from '../../components/Container';
 import { posts as postsMock } from '../../mocks/posts';
-import { Content, TopContainer } from './style';
+import { Content } from '../../components/Content';
+import { TopContainer  } from '../../components/TopContainer';
 
 export default function Post() {
   const router = useRouter();
