@@ -30,10 +30,10 @@ const defaultTheme: DefaultTheme = {
     text: "Poppins, sans-serif",
   },
   fontSize: {
-    small: '16px',
-    subtitle: '20px',
-    title: '100px',
-    text: '16px',
+    small: "16px",
+    subtitle: "20px",
+    title: "100px",
+    text: "16px",
   },
   breakpoints: {
     xs: 0,

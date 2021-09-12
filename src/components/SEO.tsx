@@ -1,13 +1,13 @@
-import { ReactElement } from 'react'
-import Head from 'next/head'
+import { ReactElement } from "react";
+import Head from "next/head";
 
 interface SEOProps {
-  title: string
-  description?: string
-  keywords?: string[]
-  image?: string 
-  shouldExcludeTitleSuffix?: boolean
-  shouldIndexPage?: boolean
+  title: string;
+  description?: string;
+  keywords?: string[];
+  image?: string;
+  shouldExcludeTitleSuffix?: boolean;
+  shouldIndexPage?: boolean;
 }
 
 export default function SEO({
@@ -16,14 +16,14 @@ export default function SEO({
   keywords,
   image,
   shouldExcludeTitleSuffix = false,
-  shouldIndexPage = true
+  shouldIndexPage = true,
 }: SEOProps): ReactElement {
-  const pageTitle = `${title} ${!shouldExcludeTitleSuffix && '- CommitZero'}`
+  const pageTitle = `${title} ${!shouldExcludeTitleSuffix && "- CommitZero"}`;
   const pageImage = image
-    ? image.startsWith('/')
+    ? image.startsWith("/")
       ? `${process.env.NEXT_PUBLIC_SITE_URL}${image}`
       : image
-    : undefined
+    : undefined;
 
   return (
     <Head>
@@ -31,7 +31,7 @@ export default function SEO({
       {description && <meta name="description" content={description} />}
       {pageImage && <meta name="image" content={pageImage} />}
       {keywords && (
-        <meta name="keywords" content={keywords.slice().join(', ')} />
+        <meta name="keywords" content={keywords.slice().join(", ")} />
       )}
 
       {!shouldIndexPage && <meta name="robots" content="noindex,nofollow" />}
@@ -78,5 +78,5 @@ export default function SEO({
         content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=5" // ,user-scalable=no
       />
     </Head>
-  )
+  );
 }

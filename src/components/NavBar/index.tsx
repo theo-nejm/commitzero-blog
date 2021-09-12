@@ -1,5 +1,5 @@
 import { NavContainer, ThemeButton } from "./style";
-import Link from 'next/link';
+import Link from "next/link";
 
 export default function NavBar({ toggleTheme }: any) {
   return (

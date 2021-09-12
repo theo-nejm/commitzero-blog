@@ -37,6 +37,6 @@ declare module "styled-components" {
       title: string;
       subtitle: string;
       small: string;
-    }
+    };
   }
 }

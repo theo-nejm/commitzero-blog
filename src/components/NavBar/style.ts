@@ -8,7 +8,7 @@ export const NavContainer = styled.nav`
 
   > a {
     text-decoration: none;
-    
+
     > h1 {
       margin: 0;
       color: ${({ theme }) => theme.colors.text.contrast};

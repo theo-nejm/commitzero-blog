@@ -27,10 +27,10 @@ const darkTheme: DefaultTheme = {
     bold: 700,
   },
   fontSize: {
-    small: '16px',
-    subtitle: '20px',
-    title: '32px',
-    text: '20px',
+    small: "16px",
+    subtitle: "20px",
+    title: "32px",
+    text: "20px",
   },
   font: {
     title: "Poppins, sans-serif",
