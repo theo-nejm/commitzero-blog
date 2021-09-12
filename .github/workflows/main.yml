@@ -45,6 +45,7 @@ jobs:
         KEY: ${{ secrets.SSHKEY }}
         script: |
           cd /apps/commitzero-blog 
+          docker images -f "dangling=true" --format "{{.ID}}" | xargs docker rmi - || true
           docker build . -t commitzero-blog
 
     - name: Deploying application
