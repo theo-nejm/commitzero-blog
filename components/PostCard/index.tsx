@@ -1,5 +1,6 @@
 import Container from './style';
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface Props {
   id: number;
@@ -19,7 +20,7 @@ export default function Post({ id, date, title, description, image, content }: P
   return <Container>
     <Link href={`/post/${id}`}>
     <a>
-      <img src={image.url} alt={image.altText} />
+      <Image src={image.url} alt={image.altText} />
     
     <div className="date">{parsedDate}</div>
     <div className="title">

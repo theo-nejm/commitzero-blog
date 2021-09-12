@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Link from 'next/link';
+import Image from 'next/image';
 
 import Container from "../components/Container";
 import HighlightedPost from "../components/HighlightedPost";
@@ -17,7 +18,7 @@ const Home: NextPage = () => {
       <HighlightedPost>
         <Link href={`post/${highlighted.id}`}>
         <a>
-          <img
+          <Image
             src={highlighted.image.url}
             alt={highlighted.image.altText}
           />
