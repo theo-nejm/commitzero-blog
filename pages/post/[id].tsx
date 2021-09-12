@@ -21,5 +21,7 @@ export default function Post() {
         <Content dangerouslySetInnerHTML={{ __html: post.content}} />
       </Container>
     )
+  } else {
+    return null;
   }
 }
