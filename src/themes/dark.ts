@@ -23,6 +23,7 @@ const darkTheme: DefaultTheme = {
   fontWeight: {
     thin: 100,
     medium: 400,
+    title: 600,
     bold: 700,
   },
   fontSize: {

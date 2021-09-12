@@ -17,6 +17,7 @@ declare module "styled-components" {
     fontWeight: {
       thin: number;
       medium: number;
+      title: number;
       bold: number;
     };
     font: {

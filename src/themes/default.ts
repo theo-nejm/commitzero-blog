@@ -22,6 +22,7 @@ const defaultTheme: DefaultTheme = {
   fontWeight: {
     thin: 100,
     medium: 400,
+    title: 600,
     bold: 700,
   },
   font: {
@@ -31,7 +32,7 @@ const defaultTheme: DefaultTheme = {
   fontSize: {
     small: '16px',
     subtitle: '20px',
-    title: '32px',
+    title: '100px',
     text: '16px',
   },
   breakpoints: {

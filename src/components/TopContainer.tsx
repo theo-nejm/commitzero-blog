@@ -1,10 +1,7 @@
 import styled from "styled-components";
 
-interface IProps {
-  imgUrl: string;
-}
 
-export const TopContainer = styled.div<IProps>`
+export const TopContainer = styled.div`
 display: grid;
 grid-template-columns: 1fr;
 justify-content: space-between;
@@ -12,16 +9,13 @@ overflow: hidden;
 position: relative;
 
 .img {
-  height: 200px;
-  background: url(${props => props.imgUrl});
-  border-radius: ${({ theme }) => theme.spacing(2)}px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+  width: 100%;
+  border-radius: ${({ theme }) => theme.spacing(1)}px;
 }
 
 h2 {
   font-size: ${({ theme }) => theme.fontSize.title};
+  line-height: 100px;
   text-align: center;
 }
 
@@ -42,4 +36,3 @@ p {
   transition: .35s ease;
 }
 `
-
