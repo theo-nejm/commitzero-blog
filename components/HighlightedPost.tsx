@@ -5,10 +5,15 @@ const HighlightedPost = styled.div`
   grid-template-columns: 1fr 1fr;
   gap: ${({ theme }) => theme.spacing(3)}px;
 
-  h2 {
-    margin: 0;
 
-    font-size: 32px;
+  a {
+    text-decoration: none;
+    color: ${({ theme }) => theme.colors.text.contrast};
+    
+    > h2 {
+      margin: 0;
+      font-size: 32px;
+    }
   }
 
   img {

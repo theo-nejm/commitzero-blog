@@ -18,10 +18,8 @@ position: relative;
 
 h2 {
   font-size: ${({ theme }) => theme.fontSize.title};
-  z-index: 1;
   text-align: center;
 }
-
 
 p {
   text-align: center;
@@ -30,8 +28,26 @@ p {
   margin-left: 10%;
   margin-top: -1rem;
 }
+
+.divider {
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, ${({ theme }) => theme.colors.background}, ${({ theme }) => theme.colors.text.contrast}, ${({ theme }) => theme.colors.background});
+  margin-bottom: 1rem;
+  border-radius: 200px;
+  transition: .35s ease;
+}
 `
 
 export const Content = styled.div`
-font-size: ${({ theme }) => theme.fontSize.text}
+font-size: ${({ theme }) => theme.fontSize.text};
+
+h3 {
+  font-size: ${({ theme }) => theme.fontSize.subtitle}
+  margin-bottom: .5rem;
+}
+
+p {
+  
+}
 `
