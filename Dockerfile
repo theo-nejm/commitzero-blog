@@ -10,7 +10,7 @@ ENV NODE_ENV homolog
 WORKDIR /app
 
 COPY ./package.json ./
-COPY ./yarn-lock.json ./
+COPY ./yarn.lock ./
 COPY . ./
 
 RUN yarn install
