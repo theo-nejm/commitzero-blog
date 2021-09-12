@@ -5,8 +5,6 @@ ARG BASE_IMAGE=node:alpine
 # ================================================================
 FROM $BASE_IMAGE as builder
 
-ENV NODE_ENV production
-
 WORKDIR /app
 
 COPY ./package.json ./
