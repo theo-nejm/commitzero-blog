@@ -46,4 +46,6 @@ jobs:
           USERNAME: ${{ secrets.USERNAME }}
           PORT: ${{ secrets.PORT }}
           KEY: ${{ secrets.SSHKEY }}
-          script: pm2 restart commitzero-blog
+          script: |
+            exec bash
+            pm2 restart commitzero-blog
