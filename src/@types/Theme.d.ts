@@ -1,12 +1,8 @@
 import "styled-components";
 
 declare module "styled-components" {
-  export interface DefaultTheme {
+  export interface DefaultTheme extends Theme {
     name: string;
-
-    spacing(num: number): number;
-    alpha(color: string, opacity: number): string;
-
     colors: {
       background: string;
       text: {
@@ -14,6 +10,13 @@ declare module "styled-components" {
         secondary: string;
       };
     };
+
+
+    
+  };
+  export interface Theme {
+    spacing(num: number): number;
+    alpha(color: string, opacity: number): string;
     fontWeight: {
       thin: number;
       medium: number;
