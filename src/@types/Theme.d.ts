@@ -17,6 +17,7 @@ declare module "styled-components" {
     fontWeight: {
       thin: number;
       medium: number;
+      author: number;
       title: number;
       bold: number;
     };
@@ -35,6 +36,8 @@ declare module "styled-components" {
     fontSize: {
       text: string;
       title: string;
+      highlightedTitle: string;
+      postCardTitle: string;
       subtitle: string;
       small: string;
     };

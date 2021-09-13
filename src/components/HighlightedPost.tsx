@@ -4,6 +4,10 @@ const HighlightedPost = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: ${({ theme }) => theme.spacing(3)}px;
+<<<<<<< HEAD
+  position: relative;
+=======
+>>>>>>> 656c58a3c6b710d2fc0190f566f80f4f2e135dc8
 
   a {
     text-decoration: none;
@@ -11,7 +15,8 @@ const HighlightedPost = styled.div`
 
     > h2 {
       margin: 0;
-      font-size: 32px;
+      font-size: ${({ theme }) => theme.fontSize.highlightedTitle};
+      line-height: 120%;
     }
   }
 
@@ -26,19 +31,26 @@ const HighlightedPost = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
 
-  .date {
-    color: ${({ theme }) => theme.colors.text.secondary};
-    transition: 0.35s ease;
-  }
-
-  .description {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
+    .date {
+      color: ${({ theme }) => theme.colors.text.secondary};
+      transition: 0.35s ease;
+    }
+  
+    .description {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+  
+    .author {
+      color: ${({ theme }) => theme.colors.text.secondary};
+      font-weight: ${({ theme }) => theme.fontWeight.author};
+      transition: 0.35s ease;
+      margin-bottom: 1rem;
+    }
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.md}px) {
