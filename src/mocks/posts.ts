@@ -14,6 +14,8 @@ export const posts = [
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem molestiae id, quis corrupti ex officia? Dolorum aperiam omnis at a esse, dolor est, neque corporis exercitationem ducimus quos laudantium aliquam?
       
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem molestiae id, quis corrupti ex officia? Dolorum aperiam omnis at a esse, dolor est, neque corporis exercitationem ducimus quos laudantium aliquam?`
+      ,
+      author: 'Theo Nejm'
   },
   {
     id: 2,
@@ -30,7 +32,9 @@ export const posts = [
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem molestiae id, quis corrupti ex officia? Dolorum aperiam omnis at a esse, dolor est, neque corporis exercitationem ducimus quos laudantium aliquam?
       
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem molestiae id, quis corrupti ex officia? Dolorum aperiam omnis at a esse, dolor est, neque corporis exercitationem ducimus quos laudantium aliquam?`
-  },
+      ,
+      author: 'Theo Nejm'
+    },
   {
     id: 3,
     date: new Date().toISOString(),
@@ -46,6 +50,8 @@ export const posts = [
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem molestiae id, quis corrupti ex officia? Dolorum aperiam omnis at a esse, dolor est, neque corporis exercitationem ducimus quos laudantium aliquam?
       
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem molestiae id, quis corrupti ex officia? Dolorum aperiam omnis at a esse, dolor est, neque corporis exercitationem ducimus quos laudantium aliquam?`
+    ,
+    author: 'Theo Nejm'
   },
   {
     id: 4,
@@ -62,6 +68,8 @@ export const posts = [
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem molestiae id, quis corrupti ex officia? Dolorum aperiam omnis at a esse, dolor est, neque corporis exercitationem ducimus quos laudantium aliquam?
       
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem molestiae id, quis corrupti ex officia? Dolorum aperiam omnis at a esse, dolor est, neque corporis exercitationem ducimus quos laudantium aliquam?`
+    ,
+    author: 'Theo Nejm'
   },
   {
     id: 5,
@@ -78,6 +86,8 @@ export const posts = [
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem molestiae id, quis corrupti ex officia? Dolorum aperiam omnis at a esse, dolor est, neque corporis exercitationem ducimus quos laudantium aliquam?
       
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem molestiae id, quis corrupti ex officia? Dolorum aperiam omnis at a esse, dolor est, neque corporis exercitationem ducimus quos laudantium aliquam?`
+    , 
+    author: 'Theo Nejm'
   },
   {
     id: 155,
@@ -94,5 +104,7 @@ export const posts = [
       <h3>Lorem ipsum dolor sit amet</h3> consectetur, adipisicing elit. Quidem molestiae id, quis corrupti ex officia? Dolorum aperiam omnis at a esse, dolor est, neque corporis exercitationem ducimus quos laudantium aliquam?
       
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem molestiae id, quis corrupti ex officia? Dolorum aperiam omnis at a esse, dolor est, neque corporis exercitationem ducimus quos laudantium aliquam?`
+    ,
+    author: 'Theo Nejm'
   }
 ]

@@ -22,6 +22,7 @@ const defaultTheme: DefaultTheme = {
   fontWeight: {
     thin: 100,
     medium: 400,
+    author: 500,
     title: 600,
     bold: 700,
   },
@@ -32,13 +33,15 @@ const defaultTheme: DefaultTheme = {
   fontSize: {
     small: '16px',
     subtitle: '20px',
-    title: '100px',
+    highlightedTitle: '40px',
+    postCardTitle: '24px',
+    title: '40px',
     text: '16px',
   },
   breakpoints: {
     xs: 0,
     sm: 600,
-    post: 720,
+    post: 800,
     md: 960,
     lg: 1280,
     xl: 1920,

@@ -16,10 +16,18 @@ export default function Post() {
         <SEO title={post.title} description={post.description} image={post.image.url} />
 
         <TopContainer>
-          <img src={post.image.url} alt={post.image.altText} className='img' />
-          <h2>{post.title}</h2>
-          <p>{post.description}</p>
-          <div className="divider" />
+          <div className="top">
+            <div className="right">
+              <img src={post.image.url} alt={post.image.altText} className='img' />
+            </div>
+            <div className="left">
+              <h2>{post.title}</h2>
+            </div>
+          </div>
+          <div className="bottom">
+            <p>{post.description}</p>
+            <div className="divider" />
+          </div>
         </TopContainer>
         <Content dangerouslySetInnerHTML={{ __html: post.content}} />
       </Container>
