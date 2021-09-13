@@ -4,10 +4,7 @@ const HighlightedPost = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: ${({ theme }) => theme.spacing(3)}px;
-<<<<<<< HEAD
   position: relative;
-=======
->>>>>>> 656c58a3c6b710d2fc0190f566f80f4f2e135dc8
 
   a {
     text-decoration: none;
