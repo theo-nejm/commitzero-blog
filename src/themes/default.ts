@@ -41,7 +41,7 @@ const defaultTheme: DefaultTheme = {
   breakpoints: {
     xs: 0,
     sm: 600,
-    post: 800,
+    post: 840,
     md: 960,
     lg: 1280,
     xl: 1920,

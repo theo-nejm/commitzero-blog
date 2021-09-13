@@ -33,7 +33,7 @@ const darkTheme: DefaultTheme = {
     highlightedTitle: '40px',
     postCardTitle: '24px',
     title: '40px',
-    text: '20px',
+    text: '16px',
   },
   font: {
     title: "Poppins, sans-serif",
