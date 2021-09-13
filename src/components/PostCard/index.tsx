@@ -10,7 +10,7 @@ interface Props {
   image: {
     url: string;
     altText: string;
-  },
+  };
   content: string;
   author: string;
 }

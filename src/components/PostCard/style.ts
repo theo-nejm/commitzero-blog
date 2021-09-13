@@ -9,7 +9,7 @@ export default styled.div`
 
   a {
     text-decoration: none;
-    color: ${({ theme }) => theme.colors.text.contrast}
+    color: ${({ theme }) => theme.colors.text.contrast};
   }
 
   h3 {

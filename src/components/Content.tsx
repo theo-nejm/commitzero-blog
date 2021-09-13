@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Content = styled.div`
 font-size: ${({ theme }) => theme.fontSize.small};
@@ -11,4 +11,4 @@ h3 {
 p {
   font-size: ${({ theme }) => theme.fontSize.small}
 }
-`
+`;

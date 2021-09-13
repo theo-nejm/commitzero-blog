@@ -13,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     background-color: ${({ theme }) => theme.colors.background};
     font-family: ${({ theme }) => theme.font.text};
-    color: ${({theme}) => theme.colors.text.contrast};
+    color: ${({ theme }) => theme.colors.text.contrast};
     transition: .35s ease;
   }
 

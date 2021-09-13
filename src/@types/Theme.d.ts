@@ -40,6 +40,6 @@ declare module "styled-components" {
       postCardTitle: string;
       subtitle: string;
       small: string;
-    }
+    };
   }
 }
