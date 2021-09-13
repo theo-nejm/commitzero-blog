@@ -35,7 +35,6 @@ jobs:
           PORT: ${{ secrets.PORT }}
           KEY: ${{ secrets.SSHKEY }}
         with:
-          rm: true
           source: "."
           target: "/apps/commitzero-blog"
 
@@ -47,7 +46,6 @@ jobs:
           PORT: ${{ secrets.PORT }}
           KEY: ${{ secrets.SSHKEY }}
           script: |
-            exec bash
-            cd /apps/commitzero-blog
-            pm2 delete commitzero-blog
-            pm2 start yarn --name "commitzero-blog" -- start
+            export NVM_DIR=~/.nvm
+            source ~/.nvm/nvm.sh
+            pm2 restart commitzero-blog
