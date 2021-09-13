@@ -38,17 +38,11 @@ export default styled.div`
   }
 
   &:hover {
-    .date, .description {
-      opacity: .3;
-    }
-    
-    img, .author, h3 {
-      opacity: 1 !important;
-    }
-    
     img {
-      transform: translateX(-5px) translateY(-5px);
-      box-shadow: 5px 5px 0 ${({ theme }) => theme.colors.text.secondary};
+      transform: translateX(-6px) translateY(-6px);
+      box-shadow: 2px 2px 0 ${({ theme }) => theme.colors.background}, 
+        6px 6px 0 ${({ theme }) => theme.colors.text.contrast}, 
+        7px 7px 3px ${({ theme }) => theme.colors.text.secondary};
     }
   }
 
