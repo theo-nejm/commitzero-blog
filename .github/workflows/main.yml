@@ -38,14 +38,3 @@ jobs:
           rm: true
           source: "."
           target: "/apps/commitzero-blog"
-
-      - name: Building application
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.HOST }}
-          USERNAME: ${{ secrets.USERNAME }}
-          PORT: ${{ secrets.PORT }}
-          KEY: ${{ secrets.SSHKEY }}
-          script: |
-            exec bash
-            pm2 restart commitzero-blog
